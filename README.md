@@ -1,69 +1,58 @@
 # 🎩 Hatmap
-**High-Performance Asynchronous Network Reconnaissance Tool**  
+
+**High-Performance Asynchronous Network Reconnaissance Tool**
 *Developed by Elfaria Serfort*
 
-**Hatmap** is a powerful network scanning utility written in **Rust**, designed for speed, memory safety, and precision. It bridges the gap between traditional tools and modern system programming by leveraging asynchronous I/O and low-level packet crafting.
+Hatmap is a modern network scanner written in **Rust**, built for professionals who need **speed, precision, and reliability**. By combining asynchronous execution with low-level packet control, Hatmap delivers fast reconnaissance while maintaining Rust’s memory safety and performance advantages.
+
+It is designed to sit between classic scanners and next-generation tooling — lightweight, efficient, and built for real-world workflows.
 
 ---
 
 ## ✨ Features
 
-*   🚀 **Blazing Fast:** Powered by the `tokio` runtime for non-blocking, asynchronous task scheduling.
-*   🛡️ **Stealth Scanning:** Implements **TCP SYN (Half-open) Scanning** using raw packets via `libpnet` to bypass full connection logging.
-*   🔍 **Deep Fingerprinting:** Advanced service detection and banner grabbing to identify product versions and OS hints.
-*   🌐 **Dual-Stack Ready:** Full support for both IPv4 and IPv6 scanning, including CIDR range parsing.
-*   📊 **Modern TUI:** Interactive and beautiful Terminal User Interface built with `ratatui`[cite: 1].
-*   🎯 **Adaptive Logic:** Automatic RTT (Round Trip Time) calculation and dynamic timeout adjustment for unstable networks[cite: 1].
-*   💾 **Flexible Output:** Supports clean table views for humans and JSON output for automation[cite: 1].
+* 🚀 High-Speed Async Engine (Tokio)
+* 🛡️ TCP SYN Half-Open Scanning
+* 🔍 Service Fingerprinting & Banner Grabbing
+* 🌐 IPv4 / IPv6 / CIDR Support
+* 📊 Real-Time TUI Dashboard
+* 🎯 Adaptive RTT Timeout Logic
+* 💾 JSON + Table Output
 
 ---
 
-## 🛠️ Internal Architecture
+## 📦 Installation
 
-The project is modularized for maximum maintainability[cite: 1]:
-*   **`main.rs`**: Handles CLI arguments, CIDR parsing, and result orchestration[cite: 1].
-*   **`scanner.rs`**: The core engine utilizing a Producer-Consumer model with `mpsc` channels and `Semaphore` for concurrency control[cite: 1].
-*   **`packet.rs`**: Handles low-level construction of TCP SYN/ACK packets and Ethernet frames[cite: 1].
-*   **`fingerprint.rs`**: Manages safe banner grabbing and regex-based service identification[cite: 1].
-*   **`ui.rs`**: Defines the layout and rendering logic for the interactive dashboard[cite: 1].
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-To use Raw SYN scanning, you need specific privileges or drivers[cite: 1]:
-*   **Windows:** Install [Npcap](https://nmap.org/npcap/) in "WinPcap API-compatible Mode".
-*   **Linux:** Run with `sudo` or grant `CAP_NET_RAW` capabilities to the binary.
-
-### Installation
 ```bash
-git clone [https://github.com/hoshinomuji/hatmap.git](https://github.com/hoshinomuji/hatmap.git)
+git clone https://github.com/hoshinomuji/hatmap.git
 cd hatmap
 cargo build --release
-Usage Examples
-Basic TCP Connect Scan:
+```
 
-Bash
-./target/release/hatmap scanme.nmap.org --ports 1-1000
-Stealth SYN Scan (Requires Admin/Root):
+---
 
-Bash
-sudo ./target/release/hatmap 192.168.1.0/24 --ports 80,443 --syn
-Output to JSON:
+## ⚡ Usage
 
-Bash
-./target/release/hatmap example.com --ports 1-65535 --format json > results.json
-📦 Key Dependencies
-tokio: The industry-standard async runtime for Rust[cite: 1].
+### Basic Scan
 
-libpnet: Cross-platform low-level networking[cite: 1].
+```bash
+hatmap scanme.nmap.org --ports 1-1000
+```
 
-ratatui: Next-generation TUI library[cite: 1].
+### SYN Scan
 
-dashmap: High-speed concurrent hash map for scan states[cite: 1].
+```bash
+sudo hatmap 192.168.1.0/24 --ports 80,443 --syn
+```
 
-clap: Robust command-line argument parsing[cite: 1].
+### JSON Output
 
-⚖️ Disclaimer
-This tool is intended for authorized security auditing and educational purposes only. The developer, Elfaria Serfort, is not responsible for any misuse or damage caused by this application[cite: 1]. Always obtain permission before scanning networks you do not own.
+```bash
+hatmap example.com --ports 80,443 --format json > results.json
+```
+
+---
+
+## ⚖️ Disclaimer
+
+Use only on systems you own or have permission to test. Unauthorized scanning may violate laws or policies.
