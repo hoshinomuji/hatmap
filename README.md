@@ -36,19 +36,19 @@ cargo build --release
 ### Basic Scan
 
 ```bash
-hatmap scanme.nmap.org --ports 1-1000
+cargo run -- scanme.nmap.org --ports 22,80,443,9929
 ```
 
 ### SYN Scan
 
-```bash
-sudo hatmap 192.168.1.0/24 --ports 80,443 --syn
+```
+bashcargo run -- scanme.nmap.org --ports 1-1000 --syn
 ```
 
 ### JSON Output
 
 ```bash
-hatmap example.com --ports 80,443 --format json > results.json
+cargo run -- example.com --ports 80,443 --format json
 ```
 
 ---
