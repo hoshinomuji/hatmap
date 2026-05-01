@@ -1,0 +1,10 @@
+C:\Users\TyzieR\elfaria\hatmap\target\debug\deps\prettytable-9de8370277686270.d: C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\lib.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\cell.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\format.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\row.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\utils.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\csv.rs
+
+C:\Users\TyzieR\elfaria\hatmap\target\debug\deps\libprettytable-9de8370277686270.rmeta: C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\lib.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\cell.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\format.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\row.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\utils.rs C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\csv.rs
+
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\lib.rs:
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\cell.rs:
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\format.rs:
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\row.rs:
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\utils.rs:
+C:\Users\TyzieR\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prettytable-rs-0.10.0\src\csv.rs:
